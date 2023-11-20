@@ -1,0 +1,79 @@
+/* primo esercizio ed avanzato */
+
+/* 
+
+.body-img {
+  background-image: url(./immagini/background.jpg);
+  background-size: cover;
+  background-posibody {
+  margin: 0;
+  padding: 0;
+}tion: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  filter: blur(20px);
+  transition: filter 1s ease;
+}
+
+.popup {
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 150px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px 10px;
+  width: 300px;
+  background-color: yellow;
+  font-weight: bold;
+  color: red;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.buttons-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.popup button {
+  border: 0;
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  font-weight: bold;
+  color: red;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.popup button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: red;
+  border: solid 1px white;
+} */
+
+/* secondo esercizio */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+img {
+  width: 201px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0;
+}
+
+.product {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.product .text {
+  padding: 6px 12px;
+}

@@ -1,0 +1,153 @@
+/* palette 
+
+
+#9AA2E6 viola interno
+#40396E viola bordi
+
+#96C362 verde
+#739F4D verde ombra
+
+#F2F2F2 margine esterno effetto sticker
+#000000 ombra
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #40396e;
+}
+
+/* header section*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  color: white;
+}
+
+.header .contact-img {
+  width: 70px;
+}
+
+.header .add-contact {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/*filter section */
+
+.buttons-container {
+  height: 40px;
+  background-color: #40396e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  gap: 5px;
+  position: sticky;
+  top: 0px;
+}
+
+.filter-img {
+  height: 30px;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #40396e;
+  border-radius: 15px;
+  background-color: #96c362;
+  position: relative;
+  box-shadow: inset -3px -4px 0 #739f4d;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 3px solid white;
+  border-radius: 19px;
+}
+
+/*render section*/
+
+.users-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  background-color: #9aa2e6;
+  border-radius: 15px;
+}
+
+.user-card {
+  width: 325px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  border: 2px solid #40396e;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 #40396eab;
+}
+
+.photo-profile {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #40396e;
+  border-radius: 20px 5px;
+  margin-right: 15px;
+  background-color: #96c362;
+  box-shadow: 0 0 0 5px white;
+}
+
+.info-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+.info-text-contact {
+  margin-bottom: 5px;
+}
+
+.info-contact h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.info-contact p {
+  margin: 0;
+  font-weight: bold;
+  color: #40396e;
+}
+
+.contact-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-buttons-container img {
+  width: 30px;
+  height: 30px;
+}

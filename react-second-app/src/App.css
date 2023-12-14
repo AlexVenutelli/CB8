@@ -1,0 +1,84 @@
+.nav-bar {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.logo {
+  width: 50px;
+  align-items: start;
+}
+
+.search-section {
+  display: flex;
+  height: 25px;
+  margin-top: 23px;
+  justify-content: center;
+  gap: 8px;
+}
+
+.search-bar {
+  width: 350px;
+}
+.search-button {
+  height: 25px;
+}
+
+.movies-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  padding: 0 24px;
+  margin-bottom: 120px;
+}
+
+.gallery-container {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-container img {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  margin-left: 25px;
+  position: fixed;
+  bottom: 20px;
+  width: 470px;
+  background-color: #181818;
+  color: white;
+}
+
+.mobile-footer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 40px;
+  width: 500px;
+
+  list-style-type: none;
+}
+
+.mobile-footer li {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.mobile-footer li img {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,47 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  border-bottom: 2px solid rgb(236, 19, 19);
+}
+
+.logo {
+  width: 50px;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  width: 100%;
+}
+
+.search__bar {
+  height: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search__button {
+  width: 20px;
+  cursor: pointer;
+}
+.Navbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 9px;
+}
+
+.Navbar__list li {
+  cursor: pointer;
+  transition: color 0.35s;
+}
+
+.Navbar__list li:hover {
+  color: rgb(235, 10, 10);
+}

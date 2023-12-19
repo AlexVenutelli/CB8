@@ -1,0 +1,26 @@
+.GalleryList {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 12px 24px;
+
+  margin-bottom: 100px;
+}
+
+.immage__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 10px;
+}
+
+.immage__container img {
+  width: 160px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.immage__container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

@@ -1,0 +1,72 @@
+.AddPost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  border-bottom: 2px solid red;
+  margin: 0px 10px;
+}
+
+.AddPost input,
+.AddPost textarea {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 0;
+}
+
+.newPost__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .newPost__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+}
+
+.addElements__barButtons {
+  display: flex;
+  padding: 10px;
+
+  gap: 10px;
+}
+
+.addElements__barButtons button {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.AddPost__btns {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.AddPost__btns button,
+.AddPost__btns input {
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.AddPost__btns button:hover,
+.AddPost__btns input:hover {
+  color: red;
+}
+
+.clearAll {
+  background: none;
+}
+.hashtag {
+  color: red;
+}

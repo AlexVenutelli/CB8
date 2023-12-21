@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+  .App {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.logo__title {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo__title img {
+  width: 350px;
+}

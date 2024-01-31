@@ -1,0 +1,37 @@
+$color-shadow: #f698bd;
+$line-color: #ffd4e5;
+$background-color: #4c4c4c;
+
+.addTodoInput {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid $line-color;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px $color-shadow;
+    opacity: 0.7;
+  }
+
+  .btn {
+    background: none;
+    background-color: $background-color;
+    border: 1px solid $line-color;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px $color-shadow;
+    width: 100px;
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.7;
+
+    &:hover {
+      color: aqua;
+      transform: scale(1.1);
+      cursor: pointer;
+      box-shadow: 0 0 15px rgb(22, 191, 225);
+      color: rgb(121, 205, 238);
+    }
+  }
+}

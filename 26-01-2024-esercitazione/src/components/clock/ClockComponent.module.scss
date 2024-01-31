@@ -1,0 +1,16 @@
+.ClockWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #323131;
+  border-radius: 25px;
+  padding: 20px;
+  p {
+    color: red;
+    font-size: 20px;
+  }
+
+  .Clock {
+  }
+}

@@ -1,0 +1,13 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+
+  images: {
+    domains: ["i.pinimg.com"],
+  },
+  images: {
+    domains: ["www.pngkey.com"],
+  },
+};
+
+export default nextConfig;

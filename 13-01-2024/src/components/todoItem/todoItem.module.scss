@@ -1,0 +1,27 @@
+$background-color: #4c4c4c;
+$main-font-color: #ffff;
+$main-font-family: Arial, Helvetica, sans-serif;
+
+.TodoItem {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+
+  gap: 10px;
+  border-radius: 25px;
+  background-color: $background-color;
+  color: $main-font-color;
+  font-family: $main-font-family;
+
+  opacity: 0.7;
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(22, 191, 225);
+    border: 2px solid rgba(228, 28, 221, 0.737);
+    color: rgb(121, 205, 238);
+  }
+}

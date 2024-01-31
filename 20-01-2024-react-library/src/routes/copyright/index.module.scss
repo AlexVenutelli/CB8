@@ -1,0 +1,22 @@
+.body {
+  border: 2px solid red;
+  background-color: #ffffcc;
+  display: flex;
+  justify-content: center;
+}
+
+.CopyrightWrapper {
+  max-width: 800px;
+
+  padding: 20px;
+}
+
+.Copyright,
+.Content,
+.Permissions,
+.Trademarks,
+.SiteUsage,
+.ChangesAndUpdates {
+  margin-top: 20px;
+  border-bottom: 2px solid red;
+}

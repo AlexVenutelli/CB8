@@ -1,0 +1,15 @@
+.Guide {
+  border: 2px solid red;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 40px;
+
+  .image {
+    display: flex;
+    justify-content: center;
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+}

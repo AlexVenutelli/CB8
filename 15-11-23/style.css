@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(100, 100, 100);
+}
+
+.menu {
+  margin: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo img {
+  margin: 3px 20px;
+  height: 200px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-list img {
+  margin-right: 50px;
+  margin-top: 150px;
+  height: 50px;
+}
+
+.menu-list img:hover {
+  cursor: pointer;
+}
+
+.recommended h3 {
+  margin-left: 50px;
+}
+.robo-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.robo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 200px;
+  background-color: rgb(206, 200, 200);
+  border-radius: 15px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+.robo img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0 0 15px 0;
+}
+
+.robo h4,
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 4px 0;
+  margin-top: 10;
+  padding: 4px 0px;
+}
+
+.robo p {
+  font-weight: bold;
+  color: rgb(226, 43, 43);
+}
+
+.robo .text {
+  padding: 0 10px;
+}
+
+.heart {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+
+  width: 20px;
+  background: none;
+  border: none;
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
+.cart {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 60px;
+
+  width: 20px;
+  background: none;
+  border: none;
+}
+
+.cart:hover {
+  cursor: pointer;
+}

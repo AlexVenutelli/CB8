@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form {
   width: 100%;
   display: flex;
@@ -18,3 +19,25 @@
     background-color: #ffffff;
   }
 }
+=======
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .inputPokedex {
+    width: 80%;
+    max-width: 450px;
+    height: 2.5rem;
+    border: none;
+    border-radius: 25px;
+    padding-left: 30px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-color: #ffffff;
+  }
+}
+>>>>>>> 4720cc8bc51b74c79469942bfa8fd0c83d0eb2a6

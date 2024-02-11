@@ -1,0 +1,140 @@
+@import "../../styles/typeColors.module.scss";
+
+.pokedex_home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: calc(100vh - 100px);
+
+  padding: 10px;
+
+  .pokemonCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 80%;
+    max-width: 400px;
+
+    padding: 20px;
+
+    background-color: #6c6c6c;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #0f0f0f;
+
+    .Link {
+      width: fit-content;
+    }
+
+    .arrowIcon {
+      color: whitesmoke;
+      font-size: 25px;
+      left: 0;
+      margin-left: 10px;
+      transition: 0.7s;
+
+      &:hover {
+        cursor: pointer;
+        color: rgb(230, 223, 24);
+        transform: scale(1.5);
+      }
+    }
+
+    .pokemonName {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      color: whitesmoke;
+      position: relative;
+
+      .pokemonId {
+        position: absolute;
+        color: whitesmoke;
+        margin: 0;
+        top: -25px;
+        right: 10px;
+        background-color: #e0e0e55a;
+        padding: 10px;
+        border-radius: 40px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+    }
+
+    .biometry {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      margin-left: 3px;
+      color: whitesmoke;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .typesContainer {
+      display: flex;
+      font-size: 25px;
+      font-weight: bold;
+      gap: 20px;
+
+      .typeContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 0;
+        padding: 5px 8px;
+        border-radius: 15px;
+        color: whitesmoke;
+        text-transform: capitalize;
+        background-color: #df7d7d;
+
+        @each $type, $color in $typesColors {
+          &[data-type="#{$type}"] {
+            background-color: $color;
+            box-shadow: 0 0 6px lighten($color, 20%);
+          }
+        }
+      }
+    }
+    .image {
+      height: 200px;
+    }
+
+    .stats {
+      width: 100%;
+
+      color: white;
+
+      .stat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid whitesmoke;
+
+        .statName {
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .image {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

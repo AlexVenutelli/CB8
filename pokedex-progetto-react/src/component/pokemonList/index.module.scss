@@ -1,0 +1,12 @@
+.PokemonList {
+  display: flex;
+  flex-direction: column;
+  width: 96vw;
+  max-width: 470px;
+
+  height: calc(100vh - 100px);
+  gap: 22px;
+  overflow: auto;
+
+  padding: 30px;
+}

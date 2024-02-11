@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+
+  font-family: Poppins, sans-serif;
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/image/bg.jpg");
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}

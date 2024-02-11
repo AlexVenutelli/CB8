@@ -1,0 +1,79 @@
+@import "../../styles/typeColors.module.scss";
+
+.Pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 150px;
+  border: 2px solid #303030;
+  border-radius: 25px;
+  background-color: #98e3e38d;
+  box-shadow: 10px 10px #900e0ea6;
+  padding: 0 10px;
+
+  .Pokemon_text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    p {
+      margin: 0;
+      background-color: #648b7246;
+      box-shadow: 2px 2px 0px rgba(118, 108, 117, 0.446);
+      border-radius: 12px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+    .text {
+      text-transform: capitalize;
+      margin: 0;
+    }
+    h3 {
+      margin: 100;
+    }
+  }
+  .sprites {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .typesContainer {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    gap: 10px;
+
+    .typeContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 0;
+      padding: 5px 8px;
+      border-radius: 15px;
+      color: whitesmoke;
+      text-transform: capitalize;
+
+      @each $type, $color in $typesColors {
+        &[data-type="#{$type}"] {
+          background-color: $color;
+          box-shadow: 0 0 6px lighten($color, 20%);
+        }
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    filter: contrast(1.5);
+  }
+}

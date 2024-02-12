@@ -16,7 +16,7 @@ const MainLayout = ({ children }) => {
         <div className={styles.navBar_Menu}>
           <div className={styles.logo}>
             <img
-              src="/image/pokeball_white.png"
+              src="./image/pokeball_white.png"
               alt="pokeball_logo"
               className={styles.pokeball_logo}
             />

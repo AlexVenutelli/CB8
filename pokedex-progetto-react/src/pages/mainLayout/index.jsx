@@ -40,9 +40,7 @@ const MainLayout = ({ children }) => {
       {children}
 
       <footer className={styles.footer}>
-        <p>
-          Pokedex - React Project by Alex Venutelli - For the Edgemony BootCamp
-        </p>
+        <p>Pokedex - React Project by Alex Venutelli - Edgemony BootCamp</p>
       </footer>
     </div>
   );

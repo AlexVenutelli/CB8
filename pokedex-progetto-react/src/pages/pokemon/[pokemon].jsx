@@ -5,6 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { URL_POKEMON } from "@/api/apiPokemon";
 import LoadingSpinner from "@/component/loadingSpinner/LoadingSpinner";
 import PokemonTypes from "@/component/pokemonTypes/PokemonTypes";
+import MainLayout from "../mainLayout";
 
 import styles from "./index.module.scss";
 
@@ -100,19 +101,21 @@ export default function Pokedex() {
             backgroundColor: `${pokemonColor(pokemonData.types[0].type.name)}`,
           }}
         >
-          <Link className={styles.Link} href="/pokemon">
-            <FaArrowLeft className={styles.arrowIcon} />
-          </Link>
+          <div className={styles.wrapperID}>
+            <Link className={styles.Link} href="/pokemon">
+              <FaArrowLeft className={styles.arrowIcon} />
+            </Link>
+            <p className={styles.pokemonId}># {pokemonId}</p>
+          </div>
 
           <div className={styles.pokemonName}>
-            <p className={styles.pokemonId}># {pokemonId}</p>
             <h1>{pokemonData.name.toUpperCase()}</h1>
+            <label className={styles.biometry}>
+              <p>Height: {decimalHeight} m</p>
+              <p>Weight: {decimalWeight} kg</p>
+            </label>
           </div>
 
-          <div className={styles.biometry}>
-            <p>Height: {decimalHeight} m</p>
-            <p>Weight: {decimalWeight} kg</p>
-          </div>
           <PokemonTypes pokemonData={pokemonData} classSetting={styleSetting} />
 
           <ul className={styles.stats}>
@@ -140,12 +143,14 @@ export default function Pokedex() {
           />
         </div>
       ) : (
-        <div className={styles.notFound}>
-          <h1>{router.query.pokemon + " not found"}</h1>
-          <Link className={styles.Link} href="/pokemon">
-            <button className={styles.button}>Pokemon List</button>
-          </Link>
-        </div>
+        <MainLayout>
+          <div className={styles.notFound}>
+            <h1>{router.query.pokemon + " not found"}</h1>
+            <Link className={styles.Link} href="/pokemon">
+              <button className={styles.button}>Pokemon List</button>
+            </Link>
+          </div>
+        </MainLayout>
       )}
     </div>
   );

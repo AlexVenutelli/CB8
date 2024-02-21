@@ -4,14 +4,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   min-height: 150px;
+  width: 89%;
+  max-width: 400px;
   border: 2px solid #303030;
   border-radius: 25px;
   background-color: #98e3e38d;
   box-shadow: 10px 10px #900e0ea6;
-
+  padding: 0 20px;
   .Pokemon_text {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -42,9 +44,14 @@
     }
   }
   .sprites {
-    width: 30%;
+    width: auto;
+    max-width: 105px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+
+    img {
+      width: 100%;
+    }
   }
   .typesContainer {
     display: flex;

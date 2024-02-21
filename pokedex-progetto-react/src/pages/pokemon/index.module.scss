@@ -1,10 +1,8 @@
 @import "../../styles/typeColors.module.scss";
 
 .pokedex_home {
-  height: 100%;
   display: flex;
   justify-content: center;
-
   align-items: center;
 }
 
@@ -12,25 +10,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
   align-items: center;
-  height: calc(100vh - 100px);
-
-  padding: 10px;
 
   .pokemonCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    width: 80%;
-    max-width: 400px;
-
-    padding: 20px;
-
-    background-color: #6c6c6c;
-    border-radius: 30px;
-    box-shadow: 0 0 10px #0f0f0f;
+    height: calc(100vh - 80px);
+    padding: 40px;
 
     .Link {
       width: fit-content;
@@ -113,11 +100,12 @@
     }
     .image {
       height: 200px;
+      max-width: 80%;
+      margin: 0 auto;
     }
 
     .stats {
       width: 100%;
-
       color: white;
 
       .stat {
@@ -125,16 +113,56 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 2px solid whitesmoke;
+        gap: 10px;
 
         .statName {
           letter-spacing: 1px;
         }
+        .progress_stat {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
       }
     }
+  }
 
-    .image {
-      max-width: 80%;
-      margin: 0 auto;
+  .notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .button {
+      font-weight: bold;
+      color: rgb(87, 110, 228);
+      background-color: #fade07a7;
+      border-radius: 15px;
+      border: 0;
+      padding: 6px 9px;
+
+      &:hover {
+        cursor: pointer;
+
+        transform: scale(1.2);
+      }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pokemonCard {
+    margin-top: 180px;
+    background-color: #6c6c6c;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #0f0f0f;
+    max-height: 800px;
+    max-width: 400px;
+    padding: 20px;
   }
 }

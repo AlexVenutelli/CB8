@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { URL_POKEMON } from "@/api/apiPokemon";
 import LoadingSpinner from "@/component/loadingSpinner/LoadingSpinner";
 import PokemonTypes from "@/component/pokemonTypes/PokemonTypes";
-import MainLayout from "../mainLayout";
+
 import styles from "./index.module.scss";
 
 export default function Pokedex() {
@@ -90,58 +90,63 @@ export default function Pokedex() {
   }, [router.query.pokemon]);
   console.log("loading ", loading);
   return (
-    <MainLayout>
-      <div className={styles.wrapper}>
-        {loading ? (
-          <LoadingSpinner />
-        ) : pokemonData.id ? (
-          <div
-            className={styles.pokemonCard}
-            style={{
-              backgroundColor: `${pokemonColor(
-                pokemonData.types[0].type.name
-              )}`,
-            }}
-          >
-            <Link className={styles.Link} href="/pokemon">
-              <FaArrowLeft className={styles.arrowIcon} />
-            </Link>
+    <div className={styles.wrapper}>
+      {loading ? (
+        <LoadingSpinner className={styles.loadingSpinner} />
+      ) : pokemonData.id ? (
+        <div
+          className={styles.pokemonCard}
+          style={{
+            backgroundColor: `${pokemonColor(pokemonData.types[0].type.name)}`,
+          }}
+        >
+          <Link className={styles.Link} href="/pokemon">
+            <FaArrowLeft className={styles.arrowIcon} />
+          </Link>
 
-            <div className={styles.pokemonName}>
-              <p className={styles.pokemonId}># {pokemonId}</p>
-              <h1>{pokemonData.name.toUpperCase()}</h1>
-            </div>
-
-            <div className={styles.biometry}>
-              <p>Height: {decimalHeight} m</p>
-              <p>Weight: {decimalWeight} kg</p>
-            </div>
-            <PokemonTypes
-              pokemonData={pokemonData}
-              classSetting={styleSetting}
-            />
-
-            <ul className={styles.stats}>
-              {pokemonData.stats.map((stat, i) => (
-                <li key={i} className={styles.stat}>
-                  <p className={styles.statName}>
-                    {stat.stat.name.toUpperCase()}
-                  </p>
-                  <p>{stat.base_stat}</p>
-                </li>
-              ))}
-            </ul>
-
-            <img
-              className={styles.image}
-              src={pokemonData.sprites.other["official-artwork"].front_default}
-              alt="Pokemon"
-            />
+          <div className={styles.pokemonName}>
+            <p className={styles.pokemonId}># {pokemonId}</p>
+            <h1>{pokemonData.name.toUpperCase()}</h1>
           </div>
-        ) : (
+
+          <div className={styles.biometry}>
+            <p>Height: {decimalHeight} m</p>
+            <p>Weight: {decimalWeight} kg</p>
+          </div>
+          <PokemonTypes pokemonData={pokemonData} classSetting={styleSetting} />
+
+          <ul className={styles.stats}>
+            {pokemonData.stats.map((stat, i) => (
+              <li key={i} className={styles.stat}>
+                <p className={styles.statName}>
+                  {stat.stat.name.toUpperCase()}
+                </p>
+                <label className={styles.progress_stat}>
+                  <p>{stat.base_stat}</p>
+                  <progress
+                    value={stat.base_stat}
+                    max="110"
+                    className={styles.progressBar}
+                  />
+                </label>
+              </li>
+            ))}
+          </ul>
+
+          <img
+            className={styles.image}
+            src={pokemonData.sprites.other["official-artwork"].front_default}
+            alt="Pokemon"
+          />
+        </div>
+      ) : (
+        <div className={styles.notFound}>
           <h1>{router.query.pokemon + " not found"}</h1>
-        )}
-      </div>
-    </MainLayout>
+          <Link className={styles.Link} href="/pokemon">
+            <button className={styles.button}>Pokemon List</button>
+          </Link>
+        </div>
+      )}
+    </div>
   );
 }

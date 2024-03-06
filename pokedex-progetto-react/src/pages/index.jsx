@@ -25,7 +25,6 @@ export default function Home() {
           <div className={styles.background_image}>
             <img src="/image/home_background.png" alt="background_image" />
           </div>
-          <h1>ciao</h1>
         </main>
       </MainLayout>
     </>

@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>T-shirt donna</title>
+  </head>
+  <body>
+    <h1>T-shirt Donna</h1>
+    <div class="container">
+      {{#each products}}
+        <div class="card_woman">
+          <h2>{{nome}}</h2>
+          <p>Prezzo: {{prezzo}}</p>
+          <p>Taglie disponibili: {{taglia}}</p>
+          <p>Colori disponibili: {{colore}}</p>
+          <p>Disponibilità: {{disponibilita}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </body>
+</html>

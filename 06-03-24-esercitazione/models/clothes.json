@@ -1,0 +1,80 @@
+{
+  "uomo": [
+    {
+      "id": 1,
+      "nome": "Maglietta Basic Uomo",
+      "prezzo": 19.99,
+      "taglia": ["S", "M", "L", "XL"],
+      "colore": ["Bianco", "Nero", "Grigio"],
+      "disponibilita": 50
+    },
+    {
+      "id": 2,
+      "nome": "Maglietta Grafica Uomo",
+      "prezzo": 24.99,
+      "taglia": ["S", "M", "L", "XL"],
+      "colore": ["Blu", "Rosso", "Verde"],
+      "disponibilita": 40
+    },
+    {
+      "id": 3,
+      "nome": "Polo Elegante",
+      "prezzo": 29.99,
+      "taglia": ["M", "L", "XL"],
+      "colore": ["Nero", "Blu scuro", "Bordeaux"],
+      "disponibilita": 30
+    }
+  ],
+  "donna": [
+    {
+      "id": 4,
+      "nome": "Maglietta Crop Donna",
+      "prezzo": 22.99,
+      "taglia": ["XS", "S", "M", "L"],
+      "colore": ["Bianco", "Rosa", "Nero"],
+      "disponibilita": 35
+    },
+    {
+      "id": 5,
+      "nome": "Maglietta con Scollo a V",
+      "prezzo": 26.99,
+      "taglia": ["S", "M", "L"],
+      "colore": ["Azzurro", "Verde oliva", "Grigio chiaro"],
+      "disponibilita": 25
+    },
+    {
+      "id": 6,
+      "nome": "T-shirt Lunga Donna",
+      "prezzo": 31.99,
+      "taglia": ["M", "L", "XL"],
+      "colore": ["Nero", "Marrone", "Viola"],
+      "disponibilita": 20
+    }
+  ],
+  "bambino": [
+    {
+      "id": 7,
+      "nome": "T-shirt con Stampa per Bambini",
+      "prezzo": 14.99,
+      "taglia": ["2 anni", "4 anni", "6 anni", "8 anni"],
+      "colore": ["Blu", "Rosso", "Giallo"],
+      "disponibilita": 60
+    },
+    {
+      "id": 8,
+      "nome": "Maglietta a Maniche Lunghe per Bambini",
+      "prezzo": 17.99,
+      "taglia": ["3 anni", "5 anni", "7 anni"],
+      "colore": ["Verde", "Arancione", "Rosa"],
+      "disponibilita": 50
+    },
+    {
+      "id": 9,
+      "nome": "Maglietta Coordinata per Famiglie",
+      "prezzo": 39.99,
+      "taglia": ["2 anni", "4 anni", "6 anni", "8 anni"],
+      "colore": ["Blu", "Rosso", "Giallo"],
+      "disponibilita": 30
+    }
+  ]
+}
